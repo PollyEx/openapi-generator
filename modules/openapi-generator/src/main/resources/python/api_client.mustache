@@ -3,6 +3,7 @@
 {{>partial_header}}
 
 import datetime
+import decimal
 from dateutil.parser import parse
 from enum import Enum
 import json
@@ -58,6 +59,7 @@ class ApiClient:
         'bool': bool,
         'date': datetime.date,
         'datetime': datetime.datetime,
+        'decimal': decimal.Decimal,
         'object': object,
     }
     _pool = None
